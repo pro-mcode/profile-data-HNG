@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    text-decoration: none;
+    text-shadow: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--main_color);
+}
+:root {
+    --main_color: rgba(0, 0, 0, .9);
+    --primary_color: #fff;
+    --secondary_color: rgba(255, 0, 13, 0.723);
+}
+.container {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url(/assets/image/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container .date-time{
+   display: flex;
+   justify-content: end;
+   align-items: baseline;
+   margin-right: 30px;
+   gap: 8px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.profile-info .social-icon {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--primary_color);
+    height: 80px;
+    width: 80px;
+    margin: 8px 0;
+}
+.profile-info .social-icon a{
+    color: var(--primary_color);
+}
+.container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary_color);
+    box-shadow: 0 0 10px 3px var(--main_color);
+}
+.container p {
+    color: var(--primary_color);
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.container h1 {
+    color: var(--primary_color);
+    margin-top: 10px;
+}
+.container h4 {
+    color: var(--primary_color);
+    margin: -5px 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container h3 {
+    color: var(--secondary_color);
+    text-shadow: 1px 1px 1px var(--main_color);
+}
+@media only screen and (max-width: 420px) {
+    .container p {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .container img {
+        height: 170px;
+        width: 170px;
+    }
+    .container h1 {
+        font-size: 24px;
+    }
+    .container h4 {
+        font-size: 15px;
+    }
+    .container h3 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .container p {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .container img {
+        height: 150px;
+        width: 150px;
+    }
+    .container h1 {
+        font-size: 18px;
+    }
+    .container h4 {
+        font-size: 14px;
+    }
+    .container h3 {
+        font-size: 15px;
+    }
+    .profile-info .social-icon {
+        height: 60px;
+        width: 60px;
+    }
+    
+}
