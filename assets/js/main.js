@@ -1,5 +1,5 @@
-let time = document.getElementById('current-time');
 let dayWeek = document.getElementById("week-day");
+let time = document.getElementById('current-time');
 let weekDays = [
     "Sunday",
     "Monday",

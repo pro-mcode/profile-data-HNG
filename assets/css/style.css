@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: var(--main_color);
+    background: rgb(0, 0, 0);
 }
 :root {
     --main_color: rgba(0, 0, 0, .9);
@@ -19,7 +19,7 @@ body {
     --secondary_color: rgba(255, 0, 13, 0.723);
 }
 .container {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .8)), url(/assets/image/background2.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/image/background2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -38,16 +38,16 @@ body {
     align-items: center;
     height: 100%;
 }
-.profile-info .social-icon {
-    display: flex;
-    justify-content: space-evenly;
+.profile-info  a{
     color: var(--primary_color);
-    height: 80px;
-    width: 80px;
-    margin: 8px 0;
+    border-radius: 6px;
+    background: var(--main_color);
+    padding: 8px;
+    transition: background 1s ease;
 }
-.profile-info .social-icon a{
-    color: var(--primary_color);
+.profile-info  a:hover{
+    color: var(--secondary_color);
+    background: var(--primary_color);
 }
 .container img {
     height: 200px;
@@ -66,15 +66,12 @@ body {
     color: var(--primary_color);
     margin-top: 10px;
 }
-.container h4 {
-    color: var(--primary_color);
-    margin: -5px 0 10px;
-    font-size: 16px;
-    font-weight: 400;
-}
 .container h3 {
     color: var(--secondary_color);
     text-shadow: 1px 1px 1px var(--main_color);
+    font-size: 26px;
+    font-weight: 400;
+    margin: 5px 0 10px;
 }
 @media only screen and (max-width: 420px) {
     .container p {
@@ -86,13 +83,10 @@ body {
         width: 170px;
     }
     .container h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .container h4 {
         font-size: 15px;
-    }
-    .container h3 {
-        font-size: 16px;
     }
 }
 @media only screen and (max-width: 300px) {
@@ -107,15 +101,10 @@ body {
     .container h1 {
         font-size: 18px;
     }
-    .container h4 {
+    .container h3 {
+        font-size: 22px;
+    }
+    .container a {
         font-size: 14px;
     }
-    .container h3 {
-        font-size: 15px;
-    }
-    .profile-info .social-icon {
-        height: 60px;
-        width: 60px;
-    }
-    
 }
